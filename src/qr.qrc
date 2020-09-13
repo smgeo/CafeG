@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>img/check.png</file>
+    <file>img/plus.png</file>
+    <file>img/settings.png</file>
+    <file>img/x-button.png</file>
+  </qresource>
+</RCC>
