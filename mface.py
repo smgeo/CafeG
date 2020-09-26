@@ -2,11 +2,11 @@
 import sys, os
 from PyQt5 import  uic, QtCore, QtGui
 from PyQt5.QtWidgets import *
-
+import qr_rc
 class UI(QWidget):
     def __init__(self):
         super(UI, self).__init__()
-        uic.loadUi("src/code.ui", self)
+        uic.loadUi("src/cafex.ui", self)
         self.button0=self.but0
         self.button1 = self.but1
         self.button2 = self.but2
@@ -44,6 +44,10 @@ class UI(QWidget):
     def clickbtn(self):
         # print(self.sender)
         self.line.insert(self.sender().text())
+    def validate(self):
+        self.line.text()
+        pass
+
 
 
 app = QApplication(sys.argv)

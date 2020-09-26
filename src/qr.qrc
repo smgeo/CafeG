@@ -1,5 +1,14 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>img/baker.png</file>
+    <file>img/coffee.png</file>
+    <file>img/delivery-man.png</file>
+    <file>img/dining-table.png</file>
+    <file>img/menu.png</file>
+    <file>img/menur.png</file>
+    <file>img/sign.png</file>
+    <file>img/waiter.png</file>
+    <file>img/dining-table.png</file>
     <file>img/check.png</file>
     <file>img/plus.png</file>
     <file>img/settings.png</file>
