@@ -22,33 +22,6 @@ class ADMIN(QMainWindow):
         self.bt3.clicked.connect(self.supprimer)
 
 
-    def create(self):
-
-        db=_sqlite3.connect('mdata.db')
-        cursor=db.cursor()
-        command = ''''CREATE TABLE serveurs (
-        	serveur_id INTEGER PRIMARY KEY,
-        	nom_serveur TEXT NOT NULL,
-        	mot_pass INTEGER NOT NULL UNIQUE
-    	);'''
-        resultat=cursor.execute(command)
-        db.commit()
-        cursor.close()
-
-
-    def ajouter(self):
-
-        nom_serveur = self.lined1.text()
-        mot_pass = self.lined2.text()
-        db=_sqlite3.connect('mdata.db')
-        cursor=db.cursor()
-        command=("INSERT INTO serveurs (nom_serveur,mot_pass) VALUES (?,?)", (nom_serveur, mot_pass))
-        # command=''''INSERT INTO serveurs(nom_serveur,mot_pass )
-        #  VALUES(?,?)'''
-        resultat=cursor.execute(command)
-        db.commit()
-        cursor.close()
-
 
 
 
@@ -59,7 +32,7 @@ class ADMIN(QMainWindow):
         mot_pass2 = self.lined4.text()
         db=_sqlite3.connect('mdata.db')
         cursor=db.cursor()
-        command=('''UPDATE serveurs
+        command=('''UPDATE serveur
         SET nom_serveur=? ,
         mot_pass=?''',(nom_serveur2,mot_pass2))
         resultat=cursor.execute(command)

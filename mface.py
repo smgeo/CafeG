@@ -7,7 +7,7 @@ class UI(QWidget):
     def __init__(self):
         super(UI, self).__init__()
         uic.loadUi("src/cafex.ui", self)
-        self.button0=self.but0
+        self.button0 = self.but0
         self.button1 = self.but1
         self.button2 = self.but2
         self.button3 = self.but3
@@ -17,9 +17,9 @@ class UI(QWidget):
         self.button7 = self.but7
         self.button8 = self.but8
         self.button9 = self.but9
-        self.line=self.linepass
-        self.validate=self.valid
-        self.remove=self.supp
+        self.line = self.linepass
+        self.validate = self.valid
+        self.remove = self.supp
 
         self.button0.clicked.connect(self.clickbtn)
         self.button1.clicked.connect(self.clickbtn)
